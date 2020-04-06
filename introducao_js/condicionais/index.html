@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skylab JavaScript</title>
+</head>
+
+<body>
+    <script>
+        function retornaDados(sexo, idade, humano) {
+            /**
+             * igual ==
+             * identico ===
+             * diferente !==
+             * ou ||
+             * e &&
+             * negação !
+             * maior >
+             * menor <
+             * maior igual >=
+             * menor igual <=
+             */
+
+            // Condição ternária
+            var msg = humano ? 'Pessoa' : 'Extraterreste';
+
+            if (idade >= 18) {
+                msg += ' maior de idade';
+            } else {
+                msg += ' menor de idade';
+            }
+
+            switch (sexo) {
+                case 'M':
+                    msg += ' do sexo Masculino';
+                    break;
+                case 'F':
+                    msg += ' do sexo Feminino';
+                    break;
+                default:
+                    msg += '.'
+                    break;
+            }
+
+            return msg;
+        }
+
+        var resultado = retornaDados('M', 24, false);
+        console.log(resultado);
+    </script>
+</body>
+
+</html>
