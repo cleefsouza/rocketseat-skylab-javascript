@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skylab JavaScript</title>
+</head>
+
+<body>
+    <script>
+        /** Escreva uma função que verifique se o vetor de habilidades passado
+         * possui a habilidade "Javascript" e retorna um booleano true/false caso
+         * exista ou não
+         */
+
+        function verificar(array) {
+            return array.indexOf('Javascript') >= 0;
+        };
+
+        var skills = ['Javascript', 'ReactJS', 'React Native'];
+        console.log(verificar(skills));
+    </script>
+</body>
+
+</html>

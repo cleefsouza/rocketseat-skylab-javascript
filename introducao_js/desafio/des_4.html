@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skylab JavaScript</title>
+</head>
+
+<body>
+    <script>
+        /** Escreva uma função que dado um total de anos de estudo
+         * retorna o quão experiente o usuário é
+         */
+
+        function nivelExperiencia(anos) {
+            if (anos < 2) {
+                console.log('Iniciante');
+            } else if (anos >= 1 && anos < 4) {
+                console.log('Intermediário');
+            } else if (anos >= 3 && anos < 7) {
+                console.log('Avançado');
+            } else if (anos >= 7) {
+                console.log('Jedi Master');
+            }
+        };
+
+        var anosEstudos = 15;
+        nivelExperiencia(anosEstudos);
+    </script>
+</body>
+
+</html>

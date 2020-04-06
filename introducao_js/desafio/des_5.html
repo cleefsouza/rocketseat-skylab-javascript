@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skylab JavaScript</title>
+</head>
+
+<body>
+    <script>
+        /** Dado o seguinte vetor de objetos: */
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+        /** Escreva uma função que produza o seguinte resultado:
+         * O Diego possui as habilidades: Javascript, ReactJS, Redux
+         * O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+         */
+
+        function habilidades(array) {
+            for (let i = 0; i < array.length; i++) {
+                console.log(`O ${array[i].nome} possui as habilidades: ${array[i].habilidades.join(', ')}`);
+            }
+        }
+
+        habilidades(usuarios);
+
+    </script>
+</body>
+
+</html>
