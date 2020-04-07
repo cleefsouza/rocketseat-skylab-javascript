@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skylab JavaScript</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        /** Preencha uma lista (<ul>) no HTML com os itens */
+        var nomes = ['Diego', 'Gabriel', 'Lucas'];
+
+        var app = document.querySelector('#app');
+        var ul = document.createElement('ul');
+
+        nomes.forEach(item => {
+            var li = document.createElement('li');
+            li.textContent = item;
+
+            ul.append(li);
+        });
+
+        app.append(ul);
+    </script>
+</body>
+
+</html>
