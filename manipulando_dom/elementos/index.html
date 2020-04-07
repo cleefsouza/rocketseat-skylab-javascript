@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skylab JavaScript</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        var linkElement = document.createElement('a');
+        var textElement = document.createTextNode('Acessar site Rocketseat');
+
+        linkElement.setAttribute('href', 'http://rocketseat.com.br');
+        linkElement.appendChild(textElement);
+        linkElement.setAttribute('title', 'Site Rocketseat');
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+    </script>
+</body>
+
+</html>

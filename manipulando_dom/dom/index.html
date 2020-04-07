@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skylab JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome" class="nome" />
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+        // var inputElement = document.getElementById('nome'); // Por id
+        // var inputElement = document.getElementsByTagName('input'); // Por tag
+        // var inputElement = document.getElementsByClassName('nome'); // Por class
+        var inputElement = document.querySelector('div#app input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function () {
+            var text = inputElement.value;
+            alert(text);
+        }
+
+        console.log(inputElement);
+    </script>
+</body>
+
+</html>
